@@ -2,7 +2,7 @@
 import "./globals.css";
 import {cn} from "@/lib/utils";
 import Navbar from "@/components/layout/navbar";
-import {inter, poppins} from "@/assests/fonts";
+import {poppins} from "@/assests/fonts";
 import {ConvexClientProvider} from "@/providers/ConvexClientProvider";
 import WeaponAlertDialog from "@/components/WeaponAlertDialog";
 

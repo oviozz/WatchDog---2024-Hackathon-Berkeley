@@ -25,7 +25,7 @@ export default function WeaponAlertDialog() {
     const [open, setOpen] = useState(false);
     const alert = useQuery(api.securityAlert.getUnnotifiedAlerts);
 
-    console.log(alert)
+
     const markAsNotified = useMutation(api.securityAlert.markAlertAsNotified);
 
     useEffect(() => {

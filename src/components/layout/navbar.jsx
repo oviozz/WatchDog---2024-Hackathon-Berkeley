@@ -4,24 +4,26 @@
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
+import {bricolage} from "@/assests/fonts";
 
 const nav_links = [
     { title: "Dashboard", link: "/" },
     { title: "Search", link: "/search" },
     { title: "Voice", link: "/voice" },
-    { title: "Threats Log", link: "/threat-log"}
+    { title: "CCTV", link: "/cctv" },
+    // { title: "Threats Log", link: "/threat-log"}
 ];
 
 export default function Navbar() {
 
     const pathname = usePathname();
-    console.log(pathname)
+
     return (
         <header>
             <div className="flex items-center justify-between h-12 p-7">
                 <div className="flex items-center">
-                    <Link href="/" className="flex items-center">
-                        <div className={"flex items-center gap-0.5 text-2xl font-bold"}>
+                    <Link href="/" className={cn("flex items-center font-extrabold")}>
+                        <div className={"flex items-center gap-0.5 text-2xl"}>
                             <span className="text-purple-500">Watch</span>
                             <span className="text-purple-700">Dog</span>
                         </div>

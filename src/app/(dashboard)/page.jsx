@@ -1,6 +1,7 @@
 
 import LeftSide from "@/app/(dashboard)/_components/LeftSide";
 import RightSide from "@/app/(dashboard)/_components/RightSide";
+import Script from "next/script";
 
 export default function Dashboard() {
     return (

@@ -1,7 +1,6 @@
 
 import { Phone, Shield, Ambulance } from "lucide-react"
 import {cn} from "@/lib/utils";
-import {inter} from "@/assests/fonts";
 export default function EmergencyResources(){
 
     return (

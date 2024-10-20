@@ -1,5 +1,4 @@
 
-// pages/api/transcribe.js
 import { createClient, LiveTranscriptionEvents } from '@deepgram/sdk';
 import { Server } from 'ws';
 
