@@ -1,0 +1,224 @@
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    color: #3d3d3d;
+}
+
+.outer-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+section {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.removed {
+    display: none;
+}
+
+video {
+    display: block;
+}
+
+
+
+.container {
+    width: 800px;
+    border: 2px solid rgb(221, 220, 220);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(19, 228, 222);
+    background: linear-gradient(
+            354deg,
+            rgb(206, 232, 241) 0%,
+            rgba(255, 255, 255, 1) 59%
+    );
+}
+
+.top-button-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cam-button {
+    width: 260px;
+    height: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.disable-cam-button {
+    opacity: 0.3;
+}
+
+.graphic-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphic-display > p {
+    margin-bottom: 30px;
+}
+
+.model-status-loading {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.model-status-loaded {
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinout 1s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0%,
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeinout {
+    0%,
+    50% {
+        opacity: 0;
+    }
+}
+
+.garbage-status-trash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-animation: fadeinout 0.5s linear forwards;
+    animation: fadeinout 0.5s linear forwards;
+}
+
+.trash-icon {
+    font-size: 120px;
+    color: rgb(140, 221, 217);
+}
+
+.trash-icon-empty {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+    50% {
+        -moz-transform: rotate(170deg);
+    }
+}
+@-webkit-keyframes spin {
+    50% {
+        -webkit-transform: rotate(170deg);
+    }
+}
+@keyframes spin {
+    50% {
+        -webkit-transform: rotate(170deg);
+        transform: rotate(170deg);
+    }
+}
+
+
+
+.prediction-window {
+    position: absolute;
+    z-index: 20;
+}
+
+.video-display-container {
+    position: relative; /* Allows for absolute positioning of the canvas */
+    width: 100%; /* Make the container take the full width */
+    height: 0; /* Set a zero height */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    background: linear-gradient(
+            354deg,
+            rgb(12, 12, 12) 0%,
+            rgb(112, 112, 112) 98%
+    );
+    overflow: hidden; /* Hide overflow to maintain the aspect ratio */
+}
+
+video,
+canvas {
+    position: absolute; /* Position the video and canvas within the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+}
+
+.video-display {
+    background: linear-gradient(
+            354deg,
+            rgb(12, 12, 12) 0%,
+            rgb(112, 112, 112) 98%
+    );
+}
+
+.stop-webcam-button {
+    width: 95px;
+    height: 30px;
+    margin-bottom: 3px;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.hr-pickup {
+    display: none;
+    border: 1px solid rgb(140, 221, 217);
+}
+
+@media screen and (max-width: 720px) {
+    .outer-container {
+        /* background: green; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hr-pickup {
+        display: block;
+        width: 400px;
+        color: rgba(0, 0, 0, 0.1);
+    }
+
+}
