@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🛡️ Watchdog: AI-Powered School Safety System
+🚀 Inspiration
+Gun violence is now the leading cause of death among American children and teens, with 1 in every 10 gun fatalities involving individuals aged 19 or younger. In the U.S., school shootings have escalated into a tragic epidemic, underscoring the urgent need for enhanced security in schools. United by a shared vision, our team leveraged AI technology to create a platform aimed at improving school safety, protecting children, and giving peace of mind to students, parents, and educators alike.
 
-## Getting Started
+🎯 What It Does
+Watchdog uses advanced AI to enhance school security by detecting threats in real-time. Our platform streams live surveillance footage, leveraging AI to identify weapons and other indicators of potential violence, and issues instant alerts to security personnel and administrators. Additionally, our audio streaming feature detects sentiment changes, such as raised voices or distress signals, allowing security teams to respond rapidly to unfolding threats. By combining visual and auditory cues, Watchdog offers a comprehensive and proactive approach to school safety.
 
-First, run the development server:
+🛠️ How We Built It
+With the support of our incredible sponsors—Deepgram, Hyperbolic, Groq, and Fetch.AI—we developed a robust AI security solution. Here’s an overview of our tech stack and approach:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Real-Time Data Processing: Integrated Firebase and Convex for rapid data retrieval and write-back to facilitate real-time communication and alerts.
+Weapon Detection: Trained an agent using Ultralytics YOLO v8 on the Roboflow platform, achieving ~90% accuracy in weapon detection.
+Audio Analysis: Implemented sentiment analysis through Deepgram’s API to detect audio patterns like raised voices, signaling potential distress.
+Model Deployment: We experimented with Flask and FastAPI for model serving and explored AWS and Docker to optimize performance. Ultimately, we chose to implement Roboflow.js directly in the browser with a Native SDK, enabling fast and efficient model inference on the client side.
+🧩 Challenges We Encountered
+Achieving low latency and high accuracy with real-time AI object detection presented challenges, especially during initial model deployment. We experimented with various backends and infrastructures but ultimately found that running the model directly in the browser yielded optimal results. By leveraging Roboflow.js's Native SDK, we achieved efficient tracking with fast response times, meeting the stringent performance requirements of our safety solution.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🏆 Key Accomplishments
+We’re proud of the capabilities we built into Watchdog:
 
-You can start editing the page by modifying `app/page.jsx`. The page auto-updates as you edit the file.
+Instant Weapon Detection: Our AI agents quickly detect weapons and alert law enforcement, faculty, and students in real-time.
+Sentiment Analysis: Integrated sentiment detection to identify emotional escalations that could indicate potential threats.
+Comprehensive Data Display: We developed real-time data dashboards that provide school officials and security teams with up-to-the-minute information, helping them make informed decisions swiftly.
+Integrated AI-Driven Safety Solution: Bringing together visual and auditory detection in a unified system, Watchdog offers a robust, proactive approach to school security.
+💡 What We Learned
+Building Watchdog reinforced our belief in the power of perseverance. We learned that each challenge pushed us closer to our goal, and that by standing firm as a team, we could achieve our vision of a safer learning environment.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+🚀 What's Next for Watchdog
+Our ultimate vision is to see Watchdog incorporated into the American school system, providing a safer educational environment across the nation.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+🛠️ Built With
+AI & Machine Learning: Ultralytics YOLO v8, Roboflow
+Audio Analysis: Deepgram API
+Data Management: Firebase, Convex
+Backend: Roboflow.js Native SDK, Flask, FastAPI, AWS, Docker
+Real-Time Streaming & Dashboard: Custom JavaScript integrations with Convex
