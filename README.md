@@ -1,5 +1,19 @@
 # 🛡️ Watchdog: AI-Powered School Safety System
 
+## Images
+
+**Weapon Detection**
+![image](https://github.com/user-attachments/assets/32f33874-5178-4714-b463-b8d0b7773938)
+**Alert System**
+![image](https://github.com/user-attachments/assets/54bd45f7-bb25-48e7-8fad-921ca3f0f56b)
+**Police Report**
+![image](https://github.com/user-attachments/assets/98cb0faa-9535-437f-80f2-191a4161c948)
+**Real-time voice analysis**
+![image](https://github.com/user-attachments/assets/62ca2428-68cd-4ee6-bae9-02292b43447d)
+![image](https://github.com/user-attachments/assets/729caff5-40ac-4ad1-ac40-7c7328230e11)
+
+
+
 ## 🚀 Inspiration
 Gun violence is now the leading cause of death among American children and teens, with 1 in every 10 gun fatalities involving individuals aged 19 or younger. In the U.S., school shootings have escalated into a tragic epidemic, underscoring the urgent need for enhanced security in schools. United by a shared vision, our team leveraged AI technology to create a platform aimed at improving school safety, protecting children, and giving peace of mind to students, parents, and educators alike.
 
